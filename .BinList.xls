@@ -1,0 +1,9 @@
+IndelConfirm	BINDIR/.IndelConfirm_v4.pl
+Fq2SortedBam	BINDIR/.Fq2SortedBam_v2.pl
+hg19	DEFAULTDIR/DB/Reference/hg38/ucsc.hg38.fasta
+bwa	DEFAULTDIR/Softs/bwa-0.7.17/bwa
+samtools	DEFAULTDIR/Softs/samtools-1.11/bin/samtools
+tmpOnly	DEFAULTDIR/tmp
+BedTools-2.26	DEFAULTDIR/Softs/bedtools-2.26/bin/bedtools
+BlastSuit	DEFAULTDIR/Scripts/Contamination/NtBlast_v2/NtBlast_v2.pl
+VarInfo	DEFAULTDIR/Scripts/VarInfo/VarInfo.xls

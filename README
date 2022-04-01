@@ -1,0 +1,19 @@
+CisTransOfAnnoFile_v1.pl（河南省肿瘤第一版）
+它会自动判断哪些变异需要去检查顺反式，并记录判断结果。
+
+使用举例：
+	./test.sh
+
+相关目录及文件：
+	1.tmpFile文件夹下记录着相关的reads信息，“.original.bam”记录着所有相关的reads，“.bam”记录着支持所有变异共突变的reads；
+	2.ShellAndLog文件夹下记录着相关的shell和log文件；
+	3.结果记录在默认的文件“CisTrans.Result”中（文件名可以通过-name指定），其中默认统计囊括最多变异个数的变异集合对应的相关信息，但也统计了所有不同组合的reads支持数。
+
+人工核实过程（建议）：
+	1.从“CisTrans.Result”定位相关的变异集合信息；
+	2.根据坐标信息从ShellAndLog文件夹下找到对应脚本的log文件，log文件中记录了存储相关reads的bam路径及相关reads信息；
+	3.根据变异信息和相关reads进行人工核实。
+
+其它：
+	1. 假如报错“Warning: the index file is older than the FASTA file”，则与bedtools的版本有关，不影响结果。
+	2. 本程序移植时需要整个文件夹一起拷贝，拷贝之后需要修改“.BinList.xls”中的配置信息。
